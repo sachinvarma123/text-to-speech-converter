@@ -1,0 +1,111 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('https://st2.depositphotos.com/32167432/42722/i/450/depositphotos_427220582-stock-photo-public-speaking-backgrounds-close-microphone.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+::selection{
+  color: #9e075a;
+  background-image: url('monu4.jpg');
+}
+.wrapper{
+  width: 370px;
+  padding: 25px 30px;
+  border-radius: 7px;
+  background-image: url('https://images.picxy.com/cache/2021/2/15/0497add7b2d9ad74b71a404570a5091d.jpg');
+  box-shadow: 7px 7px 20px rgba(10, 202, 138, 0.05);
+}
+.wrapper header{
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+.wrapper form{
+  margin: 35px 0 20px;
+}
+form .row{
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+form .row label{
+  background-image: url('https://media.istockphoto.com/id/814391346/photo/business-conference.jpg?s=612x612&w=0&k=20&c=UpFPJ01KJAHB7kPxZ1KLhM--C0EPGXQOe3pzx8Ec5Qs=');
+  font-size: 25px;
+  color: antiquewhite;
+  margin-bottom: 5px;
+}
+form .row:nth-child(2) label{
+  font-size: 17px;
+}
+form :where(textarea, select, button){
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+}
+form .row textarea{
+  resize: none;
+  height: 110px;
+  font-size: 15px;
+  padding: 8px 10px;
+  border: 1px solid #999;
+}
+form .row textarea::-webkit-scrollbar{
+  width: 0px;
+}
+form .row .outer{
+  height: 47px;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #999;
+}
+form .row select{
+  font-size: 14px;
+  background-image: url('https://us.123rf.com/450wm/olegdudko/olegdudko1712/olegdudko171201646/91194944-microphone-on-abstract-blurred-of-speech-in-seminar-room-or-speaking-conference-hall-light-event.jpg');
+}
+form .row select::-webkit-scrollbar{
+  width: 8px;
+}
+form .row select::-webkit-scrollbar-track{
+  background: #ee0404;
+}
+form .row select::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 12px;
+  border-right: 5px solid #7b0ff7;
+}
+form button{
+  height: 52px;
+  color: #bddb10;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-image: url('monu4.jpg');
+  transition: 0.3s ease;
+}
+form button:hover{
+  background-image: url('https://c8.alamy.com/comp/2ATBGJ7/abstract-of-tree-during-autumn-2ATBGJ7.jpg');
+}
+
+@media(max-width: 400px){
+  .wrapper{
+    max-width: 345px;
+    width: 100%;
+  }
+}
